@@ -64,7 +64,7 @@ export const LandingPage: React.FC = () => {
               transition={{ delay: 0.1 }}
               className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white font-sans"
             >
-              Cyber-Smart <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-300 bg-clip-text text-transparent">Sub-Collectorate</span>
+              Build a <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-300 bg-clip-text text-transparent">Cyber-Smart/Safe Practice</span>
             </motion.h1>
 
             <motion.div 
@@ -73,17 +73,8 @@ export const LandingPage: React.FC = () => {
               transition={{ delay: 0.2 }}
               className="text-xl sm:text-2xl font-black text-brand-goldLight tracking-wide font-sans uppercase"
             >
-              “Think. Verify. Protect.”
+              “Learn.Practice.Reflect”
             </motion.div>
-            
-            <motion.p 
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.25 }}
-              className="text-sm sm:text-base font-medium text-cyan-300 font-mono"
-            >
-              Interactive Cybersecurity Simulation &amp; Awareness Training Platform
-            </motion.p>
           </div>
 
           {/* Description */}
@@ -135,9 +126,6 @@ export const LandingPage: React.FC = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         
         <div className="text-center space-y-2">
-          <div className="text-xs font-mono uppercase font-bold text-brand-cyan tracking-wider">
-            Role-Based Serious Game Architecture
-          </div>
           <h2 className="text-2xl sm:text-3xl font-black text-white">
             Select Your Administrative Operational Role
           </h2>
@@ -178,15 +166,6 @@ export const LandingPage: React.FC = () => {
                   <p className="text-xs text-slate-300 leading-relaxed">
                     {role.description}
                   </p>
-
-                  {/* Threat Tags */}
-                  <div className="flex flex-wrap gap-1.5 pt-1">
-                    {role.threatCategories.slice(0, 3).map((threat, i) => (
-                      <span key={i} className="text-[10px] font-mono px-2 py-0.5 rounded bg-gov-card text-slate-300 border border-gov-border/60">
-                        {threat}
-                      </span>
-                    ))}
-                  </div>
                 </div>
 
                 <div className="pt-3 border-t border-gov-border flex items-center justify-between text-xs font-mono">
@@ -244,9 +223,6 @@ export const LandingPage: React.FC = () => {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 rounded-3xl bg-gov-surface border border-gov-border space-y-6">
           <div className="text-center space-y-1">
-            <div className="text-xs font-mono uppercase font-bold text-brand-goldLight tracking-wider">
-              Simulation-First Learning Loop
-            </div>
             <h2 className="text-xl sm:text-2xl font-black text-white">
               How the Interactive Simulation Works
             </h2>

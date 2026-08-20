@@ -113,14 +113,11 @@ export const CertificatePage: React.FC = () => {
 
           <div className="space-y-1">
             <div className="text-[11px] font-mono uppercase font-bold tracking-widest text-[#002B7F]">
-              INTERACTIVE CYBERSECURITY SIMULATION &amp; DEFENSIVE TRAINING
+              Build A Cyber Smart / Safe Office
             </div>
             <h1 className="text-3xl sm:text-4xl font-black text-[#002B7F] tracking-tight font-serif uppercase">
               Certificate of Cybersecurity Awareness
             </h1>
-            <p className="text-sm font-semibold text-amber-700 tracking-wide font-mono">
-              Cyber-Smart Sub-Collectorate Program • “Think. Verify. Protect.”
-            </p>
           </div>
 
           {/* Certificate Recipient Presentation */}

@@ -5,7 +5,7 @@ export const SafetyBanner: React.FC<{ compact?: boolean }> = ({ compact }) => {
   return (
     <div className={`w-full bg-gradient-to-r from-gov-surface via-gov-card to-gov-surface border-y border-brand-cyan/20 ${compact ? 'py-1.5 px-3 text-xs' : 'py-2 px-4 text-xs sm:text-sm'} text-slate-300 flex items-center justify-center gap-2 shadow-inner select-none`}>
       <div className="flex items-center gap-1.5 text-brand-goldLight font-semibold tracking-wider uppercase">
-        <AlertTriangle className="w-4 h-4 animate-pulse text-brand-goldLight" />
+        <AlertTriangle className="w-4 h-4 animate-pulse text-brand-blue" />
         <span>Training Simulation</span>
       </div>
       <span className="text-slate-500 hidden sm:inline">•</span>

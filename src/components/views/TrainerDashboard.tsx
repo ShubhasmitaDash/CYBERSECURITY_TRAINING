@@ -63,28 +63,14 @@ export const TrainerDashboard: React.FC = () => {
             <span className="px-2.5 py-0.5 rounded-full bg-brand-gold text-slate-950 font-mono font-black text-xs uppercase tracking-wider">
               Trainer &amp; Projector Deck
             </span>
-            <span className="text-xs font-mono text-slate-400">
-              {trainerConfig.orgName}
-            </span>
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-black text-white">
             Live Facilitator Command Center
           </h2>
-          <p className="text-xs sm:text-sm text-slate-300">
-            Facilitate live classroom scenarios, project simulations onto wide screens, reveal model answers, and review cohort analytics.
-          </p>
         </div>
 
         <div className="flex items-center gap-3">
-          <button
-            onClick={() => setShowConfigModal(true)}
-            className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gov-card hover:bg-slate-700 border border-gov-border text-xs font-bold text-slate-200 transition-colors"
-          >
-            <Settings className="w-4 h-4 text-brand-cyan" />
-            <span>Admin Config</span>
-          </button>
-
           <button
             onClick={toggleFullScreen}
             className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-brand-blue hover:bg-brand-royal text-white text-xs font-bold shadow-glow-cyan transition-all"
@@ -117,9 +103,7 @@ export const TrainerDashboard: React.FC = () => {
               ? 'border-brand-gold text-brand-goldLight'
               : 'border-transparent text-slate-400 hover:text-slate-200'
           }`}
-        >
-          <BarChart3 className="w-4 h-4" />
-          <span>Training Cohort Analytics &amp; Risk Heatmap</span>
+        > 
         </button>
       </div>
 

@@ -59,17 +59,11 @@ export const Header: React.FC = () => {
             </div>
 
             <div className="hidden sm:block">
-              <div className="flex items-center gap-2">
-                <span className="text-[11px] uppercase tracking-wider font-mono font-bold text-brand-cyan bg-brand-cyan/10 px-2 py-0.5 rounded border border-brand-cyan/30">
-                  Defensive Simulation
-                </span>
-                <span className="text-[11px] text-slate-400 font-mono">Platform</span>
-              </div>
-              <h1 className="text-base sm:text-lg font-black tracking-tight text-white flex items-center gap-1.5">
-                Cyber-Smart Sub-Collectorate
+              <h1 className="text-base sm:text-lg font-black tracking-tight text-gov-text flex items-center gap-1.5">
+                Build a Cyber-Smart/Safe Practice
               </h1>
-              <p className="text-xs font-semibold text-brand-goldLight tracking-wide">
-                “Think. Verify. Protect.”
+              <p className="text-xs font-semibold text-brand-gold tracking-wide">
+                Learn.Practice.Reflect
               </p>
             </div>
           </div>
