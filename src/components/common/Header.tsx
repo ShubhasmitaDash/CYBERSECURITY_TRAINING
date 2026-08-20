@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTraining } from '../../context/TrainingContext';
 import { useTrainer } from '../../context/TrainerContext';
 import { OPERATIONAL_ROLES } from '../../data/rolesData';
@@ -16,6 +16,9 @@ import {
 import { RiskMeter } from './RiskMeter';
 
 export const Header: React.FC = () => {
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+  return localStorage.getItem('theme') !== 'light';
+  });
   const { 
     activeRole, 
     currentView, 
@@ -29,6 +32,15 @@ export const Header: React.FC = () => {
   const { isTrainerMode, toggleTrainerMode } = useTrainer();
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [soundOn, setSoundOn] = useState(sounds.isEnabled());
+  useEffect(() => {
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme === 'light') {
+    document.documentElement.classList.add('light');
+  } else {
+    document.documentElement.classList.remove('light');
+  }
+}, []);
 
   const currentRoleObj = OPERATIONAL_ROLES.find(r => r.id === activeRole);
 
@@ -41,6 +53,19 @@ export const Header: React.FC = () => {
     resetTraining();
     setShowResetConfirm(false);
   };
+  const toggleTheme = () => {
+  const newDarkMode = !isDarkMode;
+
+  setIsDarkMode(newDarkMode);
+
+  if (newDarkMode) {
+    document.documentElement.classList.remove('light');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.documentElement.classList.add('light');
+    localStorage.setItem('theme', 'light');
+  }
+};
 
   return (
     <header className="sticky top-0 z-40 w-full bg-gov-navy/95 backdrop-blur-md border-b border-gov-border/80 shadow-elevated">
@@ -112,6 +137,14 @@ export const Header: React.FC = () => {
                 </button>
               </div>
             )}
+            {/* Theme Toggle */}
+<button
+  onClick={toggleTheme}
+  className="p-2 rounded-lg bg-gov-surface hover:bg-gov-card border border-gov-border text-slate-300 hover:text-white transition-colors"
+  title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+>
+  {isDarkMode ? '☀️' : '🌙'}
+</button>
 
             {/* Sound Toggle */}
             <button

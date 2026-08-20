@@ -2,11 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================================================
+   GLOBAL BASE
+   ========================================================= */
+
 @layer base {
   body {
     @apply bg-gov-navy text-gov-text font-sans;
-    background-image: 
+
+    background-image:
       radial-gradient(
+        circle at 50% 0%,
+        rgba(6, 182, 212, 0.08) 0%,
+        transparent 60%
+      ),
+      radial-gradient(
+        circle at 100% 100%,
+        rgba(0, 43, 127, 0.12) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 0% 100%,
+        rgba(217, 119, 6, 0.05) 0%,
+        transparent 40%
+      );
+
+    background-attachment: fixed;
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease;
+  }
+}
+
+/* =========================================================
+   LIGHT MODE
+   ========================================================= */
+
+html.light body {
+  background-color: #f5f7fa;
+  color: #172033;
+
+  background-image:
+    radial-gradient(
       circle at 50% 0%,
       rgba(37, 99, 235, 0.05) 0%,
       transparent 60%
@@ -16,11 +53,146 @@
       rgba(15, 118, 110, 0.04) 0%,
       transparent 50%
     );
-    background-attachment: fixed;
-  }
 }
 
-/* Custom subtle scrollbar */
+/* Backgrounds */
+
+html.light .bg-gov-navy {
+  background-color: #f5f7fa !important;
+}
+
+html.light .bg-gov-dark {
+  background-color: #eef2f6 !important;
+}
+
+html.light .bg-gov-surface {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-gov-card {
+  background-color: #ffffff !important;
+}
+
+/* Borders */
+
+html.light .border-gov-border {
+  border-color: #d9e1ea !important;
+}
+
+html.light .border-gov-subtle {
+  border-color: #cbd5e1 !important;
+}
+
+/* Text */
+
+html.light .text-white {
+  color: #172033 !important;
+}
+
+html.light .text-slate-100 {
+  color: #172033 !important;
+}
+
+html.light .text-slate-200 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-300 {
+  color: #475569 !important;
+}
+
+html.light .text-slate-400 {
+  color: #64748b !important;
+}
+
+html.light .text-gov-text {
+  color: #172033 !important;
+}
+
+html.light .text-gov-muted {
+  color: #64748b !important;
+}
+
+/* Hover backgrounds */
+
+html.light .hover\:bg-gov-card:hover {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .hover\:bg-gov-surface:hover {
+  background-color: #f8fafc !important;
+}
+
+/* =========================================================
+   GLASS PANELS
+   ========================================================= */
+
+.glass-panel {
+  background: rgba(17, 30, 56, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(32, 51, 88, 0.8);
+}
+
+html.light .glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(217, 225, 234, 0.9);
+  box-shadow: 0 8px 24px -12px rgba(15, 23, 42, 0.18);
+}
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.bg-grid-pattern {
+  background-size: 32px 32px;
+
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    );
+}
+
+html.light .bg-grid-pattern {
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(15, 23, 42, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(15, 23, 42, 0.035) 1px,
+      transparent 1px
+    );
+}
+
+/* =========================================================
+   HOVER CARDS
+   ========================================================= */
+
+.glass-card-hover {
+  transition: all 0.25s ease-out;
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(6, 182, 212, 0.5);
+  box-shadow:
+    0 12px 30px -10px rgba(0, 43, 127, 0.5),
+    0 0 15px -3px rgba(6, 182, 212, 0.2);
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -39,14 +211,32 @@
   background: #334b77;
 }
 
-/* Print Styles for Certificate Generation */
+html.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* =========================================================
+   PRINT — CERTIFICATE
+   ========================================================= */
+
 @media print {
   body * {
     visibility: hidden;
   }
-  #certificate-print-area, #certificate-print-area * {
+
+  #certificate-print-area,
+  #certificate-print-area * {
     visibility: visible;
   }
+
   #certificate-print-area {
     position: absolute;
     left: 0;
@@ -58,31 +248,8 @@
     color: #0f172a !important;
     box-shadow: none !important;
   }
+
   .no-print {
     display: none !important;
   }
-}
-
-/* Scanline / Grid effect */
-.bg-grid-pattern {
-  background-size: 32px 32px;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-}
-
-.glass-panel {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(217, 225, 234, 0.9);
-  box-shadow: 0 8px 24px -12px rgba(15, 23, 42, 0.18);
-}
-
-.glass-card-hover {
-  transition: all 0.25s ease-out;
-}
-.glass-card-hover:hover {
-  transform: translateY(-2px);
-  border-color: rgba(6, 182, 212, 0.5);
-  box-shadow: 0 12px 30px -10px rgba(0, 43, 127, 0.5), 0 0 15px -3px rgba(6, 182, 212, 0.2);
 }
