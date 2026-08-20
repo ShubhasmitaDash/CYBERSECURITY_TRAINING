@@ -79,7 +79,7 @@ export const ConfigModal: React.FC<ConfigModalProps> = ({ isOpen, onClose }) => 
               value={formData.trainingTitle}
               onChange={(e) => setFormData({ ...formData, trainingTitle: e.target.value })}
               className="w-full px-4 py-2.5 rounded-xl bg-gov-dark border border-gov-border text-white text-sm focus:border-brand-cyan outline-none"
-              placeholder="e.g. Cyber-Smart Administration: Securing the Sub-Collectorate"
+              placeholder="e.g. Cyber-Smart Administration: Securing the Office"
               required
             />
           </div>

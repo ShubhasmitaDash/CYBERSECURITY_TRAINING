@@ -27,7 +27,7 @@ const TRAINER_STORAGE_KEY = 'cyber_smart_trainer_config_v1';
 
 const DEFAULT_CONFIG: TrainerConfig = {
   orgName: 'Sub-Collectorate Office, Khordha',
-  trainingTitle: 'Cyber-Smart Administration: Securing the Sub-Collectorate',
+  trainingTitle: 'Cyber-Smart Administration: Securing the Office',
   trainerName: 'District Cyber Trainer / DIO',
   trainerTitle: 'District Informatics Officer & Cybersecurity Lead',
   participantName: 'Shri / Smt. Administrative Officer',

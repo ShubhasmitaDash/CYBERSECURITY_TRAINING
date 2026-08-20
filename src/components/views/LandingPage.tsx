@@ -84,7 +84,7 @@ export const LandingPage: React.FC = () => {
             transition={{ delay: 0.3 }}
             className="max-w-3xl mx-auto text-base sm:text-lg text-slate-300 leading-relaxed font-sans"
           >
-            Practice the realistic decisions that protect government information, official correspondence, citizen land records, and administrative workflows in the Sub-Collectorate.
+            Practice the realistic decisions that protect government information, official correspondence, citizen land records, and administrative workflows in the office.
           </motion.p>
 
           {/* Primary Action Buttons */}
@@ -199,12 +199,12 @@ export const LandingPage: React.FC = () => {
                   The Cyber-Smart Office Challenge
                 </h3>
                 <p className="text-xs text-red-400 font-medium">
-                  5-Minute Multi-Incident Sub-Collectorate Triage
+                  5-Minute Multi-Incident Office Triage
                 </p>
               </div>
 
               <p className="text-xs text-slate-300 leading-relaxed">
-                Enter a live simulated Sub-Collectorate office experiencing 5 concurrent cyber emergencies. Prioritize, isolate, and neutralize all threats!
+                Enter a live simulated Government office experiencing 5 concurrent cyber emergencies. Prioritize, isolate, and neutralize all threats!
               </p>
             </div>
 

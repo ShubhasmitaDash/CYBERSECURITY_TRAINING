@@ -61,7 +61,7 @@ export const DashboardPage: React.FC = () => {
             {currentRoleObj ? currentRoleObj.title : 'All Operational Modules Track'}
           </h2>
           <p className="text-xs sm:text-sm text-slate-300">
-            {currentRoleObj ? currentRoleObj.description : 'Comprehensive Sub-Collectorate training covering all 5 operational roles.'}
+            {currentRoleObj ? currentRoleObj.description : 'Comprehensive Government training covering all 5 operational roles.'}
           </p>
         </div>
 
@@ -126,7 +126,7 @@ export const DashboardPage: React.FC = () => {
           <div className="text-2xl sm:text-3xl font-black text-white font-mono">
             {completedModules.length} <span className="text-xs text-slate-400 font-normal">/ 5</span>
           </div>
-          <div className="text-[11px] text-slate-400">Sub-Collectorate operational areas</div>
+          <div className="text-[11px] text-slate-400">Government operational areas</div>
         </div>
 
         {/* Risk Meter Component Card */}

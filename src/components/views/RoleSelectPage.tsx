@@ -38,7 +38,7 @@ export const RoleSelectPage: React.FC = () => {
           <span>Operational Role Selection</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-black text-white">
-          Choose Your Sub-Collectorate Training Role
+          Choose Your Training Role
         </h2>
         <p className="text-sm text-slate-300">
           Select your operational profile to practice role-specific cyber threat simulations, or train across all 5 operational roles in succession.

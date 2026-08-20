@@ -70,7 +70,7 @@ export const ResultsPage: React.FC = () => {
       >
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-blue/30 text-brand-cyan border border-brand-cyan/40 font-mono text-xs font-bold uppercase">
           <Sparkles className="w-4 h-4 text-brand-goldLight" />
-          <span>Sub-Collectorate Cyber Defense Assessment</span>
+          <span>Office Cyber Defense Assessment</span>
         </div>
 
         <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">

@@ -63,15 +63,15 @@ const MainContent: React.FC = () => {
               className="h-7 w-auto object-contain bg-white/90 p-0.5 rounded" 
             />
             <div>
-              <span className="font-bold text-white">Cyber-Smart Sub-Collectorate</span>
+              <span className="font-bold text-white">Cyber-Smart/Safe Practice</span>
               <span className="text-slate-500 mx-2">•</span>
-              <span>Platform by <strong className="text-brand-cyan">AI PNT</strong></span>
+              <span>Platform by <strong className="text-brand-cyan">AI PNT</strong>
+              </span>
             </div>
           </div>
 
           <div className="text-center md:text-right font-mono text-[11px] space-y-0.5">
             <div>Emergency Helpline: <strong className="text-brand-goldLight">1930</strong> (National Cyber Crime Reporting)</div>
-            <div className="text-slate-500">Training Simulation — No real government system is connected.</div>
           </div>
         </div>
       </footer>

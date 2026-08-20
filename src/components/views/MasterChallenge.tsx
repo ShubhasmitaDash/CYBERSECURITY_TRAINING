@@ -95,7 +95,7 @@ export const MasterChallenge: React.FC = () => {
             The Cyber-Smart Office Challenge
           </h2>
           <p className="text-xs sm:text-sm text-slate-300">
-            5 concurrent cyber emergencies are unfolding across the Sub-Collectorate. Prioritize &amp; resolve each threat!
+            5 concurrent cyber emergencies are unfolding across the office. Prioritize &amp; resolve each threat!
           </p>
         </div>
 
@@ -215,7 +215,7 @@ export const MasterChallenge: React.FC = () => {
               Office Challenge Complete
             </div>
             <h3 className="text-2xl sm:text-3xl font-black text-white">
-              Sub-Collectorate Incident Triage Report
+              Office Incident Triage Report
             </h3>
           </div>
 

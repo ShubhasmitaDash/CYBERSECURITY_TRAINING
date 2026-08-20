@@ -253,7 +253,7 @@ export const TrainerDashboard: React.FC = () => {
               <div className="text-3xl font-black text-white font-mono mt-1">
                 {DEFAULT_COHORT_STATS.totalParticipants} <span className="text-sm text-slate-400 font-normal">Personnel</span>
               </div>
-              <div className="text-[11px] text-emerald-400 font-mono mt-1">Khordha Sub-Collectorate Cohort</div>
+              <div className="text-[11px] text-emerald-400 font-mono mt-1">Khordha Office Cohort</div>
             </div>
 
             <div className="p-5 rounded-2xl bg-gov-surface border border-gov-border">

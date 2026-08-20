@@ -27,7 +27,7 @@ export const CertificatePage: React.FC = () => {
   const [isEditingName, setIsEditingName] = useState(false);
 
   const currentRoleObj = OPERATIONAL_ROLES.find(r => r.id === activeRole);
-  const roleTitle = currentRoleObj ? currentRoleObj.title : 'All Sub-Collectorate Operational Tracks';
+  const roleTitle = currentRoleObj ? currentRoleObj.title : 'All Operational Tracks';
 
   const todayDate = new Date().toLocaleDateString('en-GB', {
     day: '2-digit',
@@ -185,10 +185,6 @@ export const CertificatePage: React.FC = () => {
 
           </div>
 
-          {/* Safety Footer Disclaimer */}
-          <div className="pt-4 text-[9px] text-slate-400 font-mono text-center">
-            Disclaimer: This certificate confirms completion of educational cybersecurity awareness simulations. All training scenarios are fictional. No real government system is connected.
-          </div>
 
         </div>
       </div>

@@ -44,9 +44,9 @@ export const BADGES_DATA: Badge[] = [
   {
     id: 'cyber_smart_officer',
     title: 'Cyber-Smart Officer',
-    description: 'Mastered all 5 Sub-Collectorate operational modules and triaged multi-threat incidents during the 5-Minute Master Office Challenge.',
+    description: 'Mastered all 5 operational modules and triaged multi-threat incidents during the 5-Minute Master Office Challenge.',
     iconName: 'Award',
-    category: 'Sub-Collectorate Master',
+    category: 'Master',
     color: 'text-yellow-400 border-yellow-500/50 bg-yellow-500/20'
   }
 ];
