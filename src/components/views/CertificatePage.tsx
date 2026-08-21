@@ -132,7 +132,7 @@ export const CertificatePage: React.FC = () => {
 
             <p className="text-xs sm:text-sm text-slate-600 pt-2 leading-relaxed">
               has successfully undergone rigorous practical cybersecurity decision-making simulations in <br />
-              <strong className="text-[#002B7F] font-bold">{roleTitle}</strong> at <strong className="text-slate-800">{trainerConfig.orgName}</strong>, demonstrating competence in identifying spear phishing, executing Out-of-Band verifications, securing Digital Signature Certificates, protecting land record integrity, and countering social engineering threats.
+              <strong className="text-[#002B7F] font-bold">{roleTitle}</strong> at <strong className="text-slate-800">{trainerConfig.orgName}</strong>, showing competence in all fields.
             </p>
           </div>
 
@@ -159,14 +159,6 @@ export const CertificatePage: React.FC = () => {
             <div className="space-y-1 font-mono text-[11px] text-slate-600">
               <div><strong>Issue Date:</strong> {todayDate}</div>
               <div><strong>Certificate ID:</strong> {certificateId}</div>
-              <div className="text-[9px] text-slate-400">Verification Hash: AIPNT-SEC-SHA256-VERIFIED</div>
-            </div>
-
-            {/* Center: Official Seal Badge */}
-            <div className="hidden sm:flex flex-col items-center justify-center">
-              <div className="w-16 h-16 rounded-full border-2 border-dashed border-[#002B7F] flex items-center justify-center text-[#002B7F] font-mono text-[9px] font-bold text-center uppercase p-1">
-                CYBER-SMART VERIFIED
-              </div>
             </div>
 
             {/* Right: Authorized Trainer Signature */}
@@ -175,9 +167,6 @@ export const CertificatePage: React.FC = () => {
                 {trainerConfig.trainerName}
               </div>
               <div className="w-40 h-px bg-slate-400 ml-auto" />
-              <div className="text-[11px] font-bold text-slate-800">
-                Authorized Signatory &amp; Trainer
-              </div>
               <div className="text-[10px] text-slate-500 font-mono">
                 {trainerConfig.trainerTitle}
               </div>
