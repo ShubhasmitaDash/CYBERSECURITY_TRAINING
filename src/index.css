@@ -309,3 +309,11 @@ html.light .bg-emerald-950\/20 {
 html.light .bg-gov-dark\/60 {
   background-color: rgba(241, 245, 249, 0.8) !important;
 }
+/* Light mode - footer */
+html.light .bg-gov-dark\/95 {
+  background-color: #ffffff !important;
+}
+
+html.light .border-gov-border\/80 {
+  border-color: #d9e1ea !important;
+}
