@@ -103,20 +103,6 @@ export const DashboardPage: React.FC = () => {
           <div className="text-[11px] text-slate-400">Awarded for accurate defensive triage</div>
         </div>
 
-        {/* Decisions Accuracy */}
-        <div className="p-5 rounded-2xl bg-gov-surface border border-gov-border space-y-1">
-          <div className="text-slate-400 font-mono text-xs uppercase flex items-center justify-between">
-            <span>Decisions Ratio</span>
-            <Target className="w-4 h-4 text-emerald-400" />
-          </div>
-          <div className="text-2xl sm:text-3xl font-black text-white font-mono flex items-center gap-2">
-            <span className="text-emerald-400">{correctDecisionsCount}</span>
-            <span className="text-slate-500 text-lg">/</span>
-            <span className="text-red-400 text-lg">{incorrectDecisionsCount}</span>
-          </div>
-          <div className="text-[11px] text-slate-400">Correct vs Suboptimal decisions</div>
-        </div>
-
         {/* Completed Modules */}
         <div className="p-5 rounded-2xl bg-gov-surface border border-gov-border space-y-1">
           <div className="text-slate-400 font-mono text-xs uppercase flex items-center justify-between">
@@ -129,8 +115,6 @@ export const DashboardPage: React.FC = () => {
           <div className="text-[11px] text-slate-400">Government operational areas</div>
         </div>
 
-        {/* Risk Meter Component Card */}
-        <RiskMeter level={riskLevel} />
 
       </div>
 
@@ -211,7 +195,7 @@ export const DashboardPage: React.FC = () => {
 
         {/* Right Col: Character Mentor & Earned Badges */}
         <div className="space-y-6">
-          <CharacterMentor roleId={activeRole || undefined} />
+          
 
           {/* Earned Badges Shelf */}
           <div className="p-5 rounded-2xl bg-gov-surface border border-gov-border space-y-4">

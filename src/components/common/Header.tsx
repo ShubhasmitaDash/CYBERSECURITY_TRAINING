@@ -84,7 +84,7 @@ export const Header: React.FC = () => {
             </div>
 
             <div className="hidden sm:block">
-              <h1 className="text-base sm:text-lg font-black tracking-tight text-gov-text flex items-center gap-1.5">
+              <h1 className="text-base sm:text-lg tracking-tight text-gov-text flex items-center gap-1.5">
                 Build a Cyber-Smart/Safe Practice
               </h1>
               <p className="text-xs font-semibold text-brand-gold tracking-wide">

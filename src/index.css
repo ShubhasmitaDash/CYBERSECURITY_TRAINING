@@ -54,8 +54,56 @@ html.light body {
       transparent 50%
     );
 }
+/* =========================================================
+   LIGHT MODE TEXT
+   ========================================================= */
+
+html.light .text-white {
+  color: #172033 !important;
+}
+
+html.light .text-slate-100 {
+  color: #172033 !important;
+}
+
+html.light .text-slate-200 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-300 {
+  color: #475569 !important;
+}
+
+html.light .text-slate-400 {
+  color: #64748b !important;
+}
+
+html.light .text-gov-text {
+  color: #172033 !important;
+}
+
+html.light .text-gov-muted {
+  color: #64748b !important;
+}
 
 /* Backgrounds */
+html.light .bg-gov-surface\/90 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+html.light .bg-gov-card {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-gov-surface {
+  background-color: #ffffff !important;
+}
+html.light .bg-gov-navy\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+html.light .border-gov-border\/80 {
+  border-color: rgba(217, 225, 234, 0.9) !important;
+}
 
 html.light .bg-gov-navy {
   background-color: #f5f7fa !important;
@@ -147,30 +195,14 @@ html.light .glass-panel {
   background-size: 32px 32px;
 
   background-image:
-    linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.03) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.03) 1px,
-      transparent 1px
-    );
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
 
 html.light .bg-grid-pattern {
   background-image:
-    linear-gradient(
-      to right,
-      rgba(15, 23, 42, 0.035) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      to bottom,
-      rgba(15, 23, 42, 0.035) 1px,
-      transparent 1px
-    );
+    linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
 }
 
 /* =========================================================
@@ -252,4 +284,28 @@ html.light ::-webkit-scrollbar-thumb:hover {
   .no-print {
     display: none !important;
   }
+}
+/* Light mode - dashboard active track banner */
+html.light .from-gov-surface {
+  --tw-gradient-from: #ffffff !important;
+  --tw-gradient-to: rgba(255, 255, 255, 0) !important;
+}
+
+html.light .via-gov-card {
+  --tw-gradient-to: rgba(255, 255, 255, 0) !important;
+  --tw-gradient-stops:
+    var(--tw-gradient-from), #f8fafc, var(--tw-gradient-to) !important;
+}
+
+html.light .to-gov-surface {
+  --tw-gradient-to: #ffffff !important;
+}
+/* Light mode - completed scenario cards */
+html.light .bg-emerald-950\/20 {
+  background-color: rgba(16, 185, 129, 0.08) !important;
+}
+
+/* Light mode - locked badge cards */
+html.light .bg-gov-dark\/60 {
+  background-color: rgba(241, 245, 249, 0.8) !important;
 }
